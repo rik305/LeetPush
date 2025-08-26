@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "LeetCode Solution Saver",
+  "version": "1.0",
+  "description": "Automatically saves completed LeetCode solutions to a Python file and pushes to Git",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://leetcode.com/*",
+    "http://localhost:5000/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://leetcode.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "LeetCode Solution Saver"
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
