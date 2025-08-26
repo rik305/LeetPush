@@ -16,7 +16,7 @@ A Chrome extension that automatically detects when you successfully complete a L
 ### 1. Clone or Download this Repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/rik305/LeetPush/
 cd leetcode-solution-saver
 ```
 
@@ -38,7 +38,7 @@ This will:
 python leetcode_backend.py
 ```
 
-The server will start on `http://localhost:5000`
+The server will start on `http://localhost:9999`
 
 ### 4. Load the Chrome Extension
 
@@ -74,7 +74,7 @@ Click the extension icon to:
 
 ### Viewing Solutions
 
-- **Web Interface**: Visit `http://localhost:5000/solutions` to view all solutions in a formatted web page
+- **Web Interface**: Visit `http://localhost:9999/solutions` to view all solutions in a formatted web page
 - **Direct File**: Check `leetcode_solutions/solutions.py` for the raw Python file
 
 ## File Structure
@@ -128,7 +128,7 @@ Edit the `get_solution_template()` function in `leetcode_backend.py` to customiz
 
 ### Backend Connection Issues
 
-1. Check that the Flask server is running on port 5000
+1. Check that the Flask server is running on port 9999
 2. Verify no firewall is blocking localhost connections
 3. Check the browser console for CORS errors
 
