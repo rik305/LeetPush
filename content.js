@@ -215,7 +215,7 @@ class LeetCodeDetector {
         questionTitle: this.currentQuestion.title || this.currentQuestion.slug,
         questionSlug: this.currentQuestion.slug,
         difficulty: this.currentQuestion.difficulty || "Unknown",
-        code: latest?.code || this.solutionCode || "",
+        code: this.solutionCode || "",
         language: latest?.lang || "unknown",
         timestamp: new Date().toISOString(),
         url: location.href
